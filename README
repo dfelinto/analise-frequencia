@@ -1,0 +1,6 @@
+
+Para fazer contagem de frequencia:
+`./count.sh code.txt`
+
+Para tentar ler com uma tabela de referencia:
+`./read.sh code.txt table-pt_BR`
