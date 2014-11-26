@@ -101,10 +101,17 @@ def find_patterns(input, minimum, maximum):
 # Export Data
 # ##########################
 
+import operator
+
 def export_data(data):
     """"""
     # order the data
-    print(data)
+    for key, value in data.items():
+        sorted_values = sorted(value.items(), key=operator.itemgetter(1))
+        sorted_values.reverse()
+        for _key, _value in sorted_values:
+            print("{1} : {0}".format(_key, _value))
+
 
 # ##########################
 # Main
